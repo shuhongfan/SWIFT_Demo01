@@ -1,0 +1,2 @@
+本书使用的Xcode工具版本为8，可免费加入苹果开发者计划，直接从https://developer.apple.com/download/more/（苹果开发者网站）地址进行下载。
+

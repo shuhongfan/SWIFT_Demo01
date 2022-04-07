@@ -1,0 +1,17 @@
+import UIKit
+let finalSquare = 25
+var board = [Int](repeating: 0,count: finalSquare + 1)
+board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+var square = 0
+repeat
+{
+    // 顺着梯子爬上去或者顺着蛇滑下去
+    square += board[square]
+    // 掷骰子
+    let diceRoll  = Int(arc4random() % 6) + 1
+    // 根据点数移动
+    square += diceRoll
+}
+while square < finalSquare
+print("Game over!")
