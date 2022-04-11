@@ -1,5 +1,7 @@
-
-/* 我的第一个 Swift 程序 */
-var myString = "Hello, World!"
-
-print(myString)
+var array = [String]()
+for element in 0..<10 {
+    array.append("element\(element)")
+}
+for element in array{
+    print(element)
+}
